@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="./assets/fonts/SquareOne.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/SquareOne-Italic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/SquareOne-Bold-Italic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+    <title>DOGE-1 By Elon Musk</title>
+    <style>
+      body {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      [data-fls-loaded] body {
+        animation: show-body 0.45s ease 0.2s forwards;
+      }
+
+      @keyframes show-body {
+        0% {
+          opacity: 0;
+          visibility: hidden;
+        }
+        100% {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    </style>
+    <script
+      type="module"
+      crossorigin=""
+      src="./js/index.min.js?v=1753446207271"
+    ></script>
+    <link
+      rel="stylesheet"
+      crossorigin=""
+      href="./css/index.min.css?v=1753446207271"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="menu-open-bg"></div>
+      <header data-fls-header="" data-fls-header-scroll="" class="header">
+        <div class="header__container">
+          <a href="../" class="header__logo">
+            <img src="./assets/img/logo.svg" alt="DOGE-1" />
+          </a>
+          <div class="header__menu menu">
+            <button
+              type="button"
+              data-fls-menu=""
+              class="menu__icon icon-menu"
+            ></button>
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a
+                    href="#"
+                    data-fls-scrollto=".hero"
+                    class="menu__link button button--header"
+                  >
+                    <span class="button__text">ABOUT</span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="#"
+                    data-fls-scrollto=".why"
+                    data-fls-scrollto-header=""
+                    class="menu__link button button--header"
+                  >
+                    <span class="button__text">WHY?</span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="#"
+                    data-fls-scrollto=".elon"
+                    data-fls-scrollto-header=""
+                    class="menu__link button button--header"
+                  >
+                    <span class="button__text">TAG HIM</span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link button button--header">
+                    <span class="button__text">BUY</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="menu__social social">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="social__item social-item--header"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="49"
+                    height="48"
+                    viewbox="0 0 49 48"
+                    fill="none"
+                  >
+                    <path
+                      d="M24.5664 0.640625C37.6272 0.640625 48.2156 11.2284 48.2158 24.2891C48.2158 37.3499 37.6273 47.9385 24.5664 47.9385C11.5057 47.9383 0.917969 37.3498 0.917969 24.2891C0.918179 11.2285 11.5058 0.640835 24.5664 0.640625ZM24.5664 4.69434C15.3017 4.69452 7.53908 11.1248 5.49707 19.7656L4.09082 20.1172C3.8143 20.1865 3.62016 20.4356 3.62012 20.7207V29.209C3.62012 29.4941 3.8143 29.7432 4.09082 29.8125L5.55078 30.1768C5.66102 30.2043 5.76999 30.1994 5.87012 30.1709C8.36805 38.1188 15.794 43.8836 24.5664 43.8838C33.3388 43.8837 40.7637 38.1187 43.2617 30.1709C43.3621 30.1996 43.4715 30.2043 43.582 30.1768L45.042 29.8125C45.3185 29.7432 45.5127 29.4941 45.5127 29.209V20.7207C45.5127 20.4356 45.3185 20.1865 45.042 20.1172L43.6348 19.7656C41.5926 11.1249 33.8311 4.69445 24.5664 4.69434ZM24.5664 5.9375C34.0269 5.93763 41.8147 13.0969 42.8096 22.293V26.2842C41.8153 35.4809 34.0274 42.6405 24.5664 42.6406C15.1025 42.6404 7.31259 35.4762 6.32227 26.2754V22.3018C7.31312 13.1015 15.1029 5.9377 24.5664 5.9375ZM30.9512 16.8691C30.6979 16.8347 30.4397 16.8693 30.2041 16.9688L13.8926 23.8604C12.7558 24.3409 12.6977 25.9914 13.8936 26.4893C14.7787 26.8578 15.8638 27.1602 17.0332 27.3555C17.6741 27.4626 18.2101 27.3554 19.2383 26.7275C20.4039 26.0153 23.9293 23.4859 26.125 21.8223C27.0092 21.1522 27.3503 21.5723 26.6016 22.3008C24.6938 24.1549 21.3553 27.2737 21.1455 28.1035C20.902 29.0741 22.8886 30.4384 23.5371 30.8643C24.8343 31.7152 26.277 32.5302 27.248 33.0596C28.4088 33.6921 29.797 32.9635 30.0068 31.6934L32.1709 18.5254C32.2124 18.2723 32.1851 18.0126 32.0928 17.7734C32.0003 17.5342 31.8453 17.324 31.6445 17.165C31.4438 17.0062 31.2045 16.9036 30.9512 16.8691Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="social__item social-item--header"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="49"
+                    height="48"
+                    viewbox="0 0 49 48"
+                    fill="none"
+                  >
+                    <path
+                      d="M24.5664 0.640625C37.6272 0.640625 48.2156 11.2284 48.2158 24.2891C48.2158 37.3499 37.6273 47.9385 24.5664 47.9385C11.5057 47.9383 0.917969 37.3498 0.917969 24.2891C0.918179 11.2285 11.5058 0.640835 24.5664 0.640625ZM24.5664 4.69434C15.3017 4.69452 7.53908 11.1248 5.49707 19.7656L4.09082 20.1172C3.8143 20.1865 3.62016 20.4356 3.62012 20.7207V29.209C3.62012 29.4941 3.8143 29.7432 4.09082 29.8125L5.55078 30.1768C5.66102 30.2043 5.76999 30.1994 5.87012 30.1709C8.36805 38.1188 15.794 43.8836 24.5664 43.8838C33.3388 43.8837 40.7637 38.1187 43.2617 30.1709C43.3621 30.1996 43.4715 30.2043 43.582 30.1768L45.042 29.8125C45.3185 29.7432 45.5127 29.4941 45.5127 29.209V20.7207C45.5127 20.4356 45.3185 20.1865 45.042 20.1172L43.6348 19.7656C41.5926 11.1249 33.8311 4.69445 24.5664 4.69434ZM24.5664 5.9375C34.0269 5.93763 41.8147 13.0969 42.8096 22.293V26.2842C41.8153 35.4809 34.0274 42.6405 24.5664 42.6406C15.1025 42.6404 7.31259 35.4762 6.32227 26.2754V22.3018C7.31312 13.1015 15.1029 5.9377 24.5664 5.9375ZM28.877 17.001L25.0645 21.3379L21.7725 17.002H17L22.7002 24.4229L17.2959 30.5752H19.6113L23.7803 25.8301L27.4277 30.5752H32.082L26.1377 22.75L31.1904 17.001H28.877ZM21.0723 18.3076L29.3457 29.1973H28.0635L19.6973 18.3076H21.0723Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <section class="page__hero hero">
+          <div class="hero__bg">
+            <div class="hero__bg-stars">
+              <img alt="BG" src="./assets/img/hero/bg-bg.webp" />
+            </div>
+            <div class="hero__bg-front">
+              <img alt="BG" src="./assets/img/hero/bg.webp" />
+            </div>
+          </div>
+          <div class="hero__container">
+            <div class="hero__left">
+              <div class="hero__image">
+                <img
+                  data-fls-mouse=""
+                  data-fls-mouse-cx="250"
+                  data-fls-mouse-cy="500"
+                  alt="DOGE-1"
+                  src="./assets/img/hero/01.webp"
+                />
+              </div>
+              <div class="hero__image-dec">
+                <img src="./assets/img/hero/image-dec.svg" alt="Decor" />
+              </div>
+            </div>
+            <div class="hero__right">
+              <div class="hero__right-main">
+                <h1 class="hero__title">
+                  <img src="./assets/img/hero/logo.svg" alt="DOGE-1" />
+                </h1>
+                <h3 class="hero__sub-title">BY ELON MUSK</h3>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="hero__button button button--small"
+                >
+                  <span class="button__text">Join Us</span>
+                  <span class="button__icon-box">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="15"
+                      height="16"
+                      viewbox="0 0 15 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M6.5 0H0L8 8L0 16H6.5L14.5 8L6.5 0Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="15"
+                      height="16"
+                      viewbox="0 0 15 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M6.5 0H0L8 8L0 16H6.5L14.5 8L6.5 0Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+              <div class="hero__right-bottom">
+                <ul class="hero__right-bottom-list">
+                  <li class="hero__right-bottom-list-item">Flood X</li>
+                  <li class="hero__right-bottom-list-item">Burn tokens</li>
+                  <li class="hero__right-bottom-list-item">Launch history</li>
+                  <li class="hero__right-bottom-list-item">Ping Elon</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__why why">
+          <div class="why__container">
+            <div
+              class="why__content"
+              data-fls-watcher-threshold="0.65"
+              data-fls-watcher-once=""
+              data-fls-watcher=""
+            >
+              <h2
+                class="why__title"
+                data-fls-watcher-threshold="0.75"
+                data-fls-watcher-once=""
+                data-fls-watcher=""
+              >
+                WHY?
+              </h2>
+              <div
+                class="why__text"
+                data-fls-watcher-threshold="0.75"
+                data-fls-watcher-once=""
+                data-fls-watcher=""
+              >
+                <p>
+                  The main purpose of Doge-1 is to broadcast advertisements,
+                  logos and images on the screen of the Doge-1 satellite, which
+                  will be orbiting the Moon.
+                </p>
+                <p>
+                  Screen images will be captured by installed cameras and
+                  broadcast to Earth, from where they will be streamed to Twitch
+                  and Youtube platforms.
+                </p>
+                <p>
+                  <b>Contract:</b>
+                  <b>DpBzjtgGLF7QA9Ug3eUVGbnqa6j3jvYBn1XuQuktvfhm</b>
+                </p>
+              </div>
+              <h3
+                class="why__sub-title"
+                data-fls-watcher-threshold="0.75"
+                data-fls-watcher-once=""
+                data-fls-watcher=""
+              >
+                This isn’t hype. It’s trajectory.
+              </h3>
+            </div>
+            <div class="why__rigth">
+              <div class="why__image">
+                <img alt="DOGE-1" src="./assets/img/why/01.webp" />
+              </div>
+              <div class="why__first">
+                <span>The First Satellite Using Crypto</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="36"
+                  viewbox="0 0 16 36"
+                  fill="none"
+                >
+                  <circle
+                    cx="8.18542"
+                    cy="27.879"
+                    r="7.00806"
+                    transform="rotate(-90 8.18542 27.879)"
+                    stroke="white"
+                    stroke-width="1.22581"
+                  ></circle>
+                  <circle
+                    cx="8.18542"
+                    cy="19.9757"
+                    r="7.00806"
+                    transform="rotate(-90 8.18542 19.9757)"
+                    stroke="white"
+                    stroke-width="1.22581"
+                  ></circle>
+                  <circle
+                    cx="8.18542"
+                    cy="12.0724"
+                    r="7.00806"
+                    transform="rotate(-90 8.18542 12.0724)"
+                    stroke="white"
+                    stroke-width="1.22581"
+                  ></circle>
+                  <line
+                    x1="7.85463"
+                    y1="12.3545"
+                    x2="7.85463"
+                    y2="1.06417"
+                    stroke="white"
+                    stroke-width="1.22581"
+                  ></line>
+                  <line
+                    x1="15.8066"
+                    y1="1.1129"
+                    x2="0.000190762"
+                    y2="1.1129"
+                    stroke="white"
+                    stroke-width="1.22581"
+                  ></line>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__elon elon">
+          <div class="elon__bg">
+            <div class="elon__bg-stars">
+              <img alt="Stars" src="./assets/img/elon/stars.webp" />
+            </div>
+            <div class="elon__bg-bg">
+              <img alt="BG" src="./assets/img/elon/bg.webp" />
+            </div>
+          </div>
+          <div class="elon__container">
+            <div class="elon__image-box">
+              <img alt="DOGE-1" src="./assets/img/elon/01.webp" />
+              <img src="./assets/img/elon/image-dec.svg" alt="DOGE-1" />
+            </div>
+            <div
+              class="elon__content"
+              data-fls-watcher-threshold="0.65"
+              data-fls-watcher-once=""
+              data-fls-watcher=""
+            >
+              <h2
+                class="elon__title"
+                data-fls-watcher-threshold="0.75"
+                data-fls-watcher-once=""
+                data-fls-watcher=""
+              >
+                <span>NUDGE</span>
+                <br />
+                <span>ELON!</span>
+              </h2>
+              <h3
+                class="elon__sub-title"
+                data-fls-watcher-threshold="0.75"
+                data-fls-watcher-once=""
+                data-fls-watcher=""
+              >
+                Degen squad, rally up!
+              </h3>
+              <div
+                class="elon__text"
+                data-fls-watcher-threshold="0.75"
+                data-fls-watcher-once=""
+                data-fls-watcher=""
+              >
+                <p>
+                  Flood X with: “@elonmusk Launch Doge-!NOW! #Dogel ToTheMoon".
+                </p>
+                <p>
+                  Snap a screenshot of your shill, share in Telegram and get
+                  airdrop entry!
+                </p>
+                <p>
+                  If Elon replies or RTs, we burn 5% supply & airdrop massive
+                  rewards to every fighter.
+                </p>
+                <p>
+                  Double moon: Satellite blasts off, token skyrockets!
+                  Guaranteed vibes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__how how">
+          <div class="how__bg">
+            <img alt="BG" src="./assets/img/how/bg.webp" />
+          </div>
+          <div class="how__container">
+            <div class="how__top">
+              <h2 class="how__title">
+                <span>to the</span>
+                <br />
+                <span>moon</span>
+              </h2>
+              <div class="how__dec">
+                <img src="./assets/img/how/top-dec.svg" alt="Decor" />
+              </div>
+              <div class="how__timer">
+                <div class="how__timer-main">
+                  <div class="how__timer-main-item">
+                    <span>days</span>
+                    <span id="days">20</span>
+                  </div>
+                  <div class="how__timer-main-dec">:</div>
+                  <div class="how__timer-main-item">
+                    <span>hours</span>
+                    <span id="hours">20</span>
+                  </div>
+                  <div class="how__timer-main-dec">:</div>
+                  <div class="how__timer-main-item">
+                    <span>minutes</span>
+                    <span id="minutes">20</span>
+                  </div>
+                  <div class="how__timer-main-dec">:</div>
+                  <div class="how__timer-main-item">
+                    <span>seconds</span>
+                    <span id="seconds">20</span>
+                  </div>
+                </div>
+                <div class="how__timer-progress">
+                  <img src="./assets/img/how/timer.svg" alt="timer-progress" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="how__items"
+              data-fls-watcher-threshold="0.65"
+              data-fls-watcher-once=""
+              data-fls-watcher=""
+            >
+              <div
+                class="how__item"
+                data-fls-watcher-threshold="0.75"
+                data-fls-watcher-once=""
+                data-fls-watcher=""
+              >
+                <h3 class="how__item-title">
+                  <img src="./assets/img/how/title-icon.svg" alt="Icon" />
+                  <span>STEP 01</span>
+                </h3>
+                <div class="how__item-text">
+                  Lorem ipsum dolor sit amet consectetur. Mauris massa eget
+                  mauris ut magnis porta morbi. Felis orci non viverra quis.
+                  Sapien felis nibh massa vel volutpat volutpat molestie cras
+                  eleifend.
+                </div>
+                <div class="how__item-progress">
+                  <img src="./assets/img/how/progress1.svg" alt="progress1" />
+                </div>
+                <div class="how__item-borders">
+                  <img src="./assets/img/how/bord1.svg" alt="border" />
+                  <img src="./assets/img/how/bord2.svg" alt="border" />
+                  <img src="./assets/img/how/bord3.svg" alt="border" />
+                  <img src="./assets/img/how/bord4.svg" alt="border" />
+                </div>
+              </div>
+              <div
+                class="how__item"
+                data-fls-watcher-threshold="0.75"
+                data-fls-watcher-once=""
+                data-fls-watcher=""
+              >
+                <h3 class="how__item-title">
+                  <img src="./assets/img/how/title-icon.svg" alt="Icon" />
+                  <span>STEP 02</span>
+                </h3>
+                <div class="how__item-text">
+                  Lorem ipsum dolor sit amet consectetur. Mauris massa eget
+                  mauris ut magnis porta morbi. Felis orci non viverra quis.
+                  Sapien felis nibh massa vel volutpat volutpat molestie cras
+                  eleifend.
+                </div>
+                <div class="how__item-progress">
+                  <img src="./assets/img/how/progress2.svg" alt="progress1" />
+                </div>
+                <div class="how__item-borders">
+                  <img src="./assets/img/how/bord1.svg" alt="border" />
+                  <img src="./assets/img/how/bord2.svg" alt="border" />
+                  <img src="./assets/img/how/bord3.svg" alt="border" />
+                  <img src="./assets/img/how/bord4.svg" alt="border" />
+                </div>
+              </div>
+              <div
+                class="how__item"
+                data-fls-watcher-threshold="0.75"
+                data-fls-watcher-once=""
+                data-fls-watcher=""
+              >
+                <h3 class="how__item-title">
+                  <img src="./assets/img/how/title-icon.svg" alt="Icon" />
+                  <span>STEP 03</span>
+                </h3>
+                <div class="how__item-text">
+                  Lorem ipsum dolor sit amet consectetur. Mauris massa eget
+                  mauris ut magnis porta morbi. Felis orci non viverra quis.
+                  Sapien felis nibh massa vel volutpat volutpat molestie cras
+                  eleifend.
+                </div>
+                <div class="how__item-progress">
+                  <img src="./assets/img/how/progress3.svg" alt="progress1" />
+                </div>
+                <div class="how__item-borders">
+                  <img src="./assets/img/how/bord1.svg" alt="border" />
+                  <img src="./assets/img/how/bord2.svg" alt="border" />
+                  <img src="./assets/img/how/bord3.svg" alt="border" />
+                  <img src="./assets/img/how/bord4.svg" alt="border" />
+                </div>
+              </div>
+              <div
+                class="how__item"
+                data-fls-watcher-threshold="0.75"
+                data-fls-watcher-once=""
+                data-fls-watcher=""
+              >
+                <h3 class="how__item-title">
+                  <img src="./assets/img/how/title-icon.svg" alt="Icon" />
+                  <span>STEP 04</span>
+                </h3>
+                <div class="how__item-text">
+                  Lorem ipsum dolor sit amet consectetur. Mauris massa eget
+                  mauris ut magnis porta morbi. Felis orci non viverra quis.
+                  Sapien felis nibh massa vel volutpat volutpat molestie cras
+                  eleifend.
+                </div>
+                <div class="how__item-progress">
+                  <img src="./assets/img/how/progress4.svg" alt="progress1" />
+                </div>
+                <div class="how__item-borders">
+                  <img src="./assets/img/how/bord1.svg" alt="border" />
+                  <img src="./assets/img/how/bord2.svg" alt="border" />
+                  <img src="./assets/img/how/bord3.svg" alt="border" />
+                  <img src="./assets/img/how/bord4.svg" alt="border" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__join join">
+          <div class="join__bg">
+            <div class="join__bg-stars">
+              <img alt="Stars" src="./assets/img/join/stars.webp" />
+            </div>
+            <div class="join__bg-bg">
+              <img alt="BG" src="./assets/img/join/bg.webp" />
+            </div>
+          </div>
+          <div class="join__container">
+            <div class="join__left">
+              <div class="join__left-image">
+                <img alt="DOGE-1" src="./assets/img/join/01.webp" />
+              </div>
+              <div class="join__left-content">
+                <h2 class="join__left-title">
+                  <img
+                    src="./assets/img/join/title.svg"
+                    alt="start your journey with us"
+                  />
+                </h2>
+                <div class="join__left-bottom">
+                  <div class="join__left-actions">
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="join__left-button button button--small"
+                    >
+                      <span class="button__text">Join Us</span>
+                      <span class="button__icon-box">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15"
+                          height="16"
+                          viewbox="0 0 15 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M6.5 0H0L8 8L0 16H6.5L14.5 8L6.5 0Z"
+                            fill="white"
+                          ></path>
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15"
+                          height="16"
+                          viewbox="0 0 15 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M6.5 0H0L8 8L0 16H6.5L14.5 8L6.5 0Z"
+                            fill="white"
+                          ></path>
+                        </svg>
+                      </span>
+                    </a>
+                    <div class="join__left-social social">
+                      <a href="#" target="_blank" class="social__item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="49"
+                          height="48"
+                          viewbox="0 0 49 48"
+                          fill="none"
+                        >
+                          <path
+                            d="M24.5664 0.640625C37.6272 0.640625 48.2156 11.2284 48.2158 24.2891C48.2158 37.3499 37.6273 47.9385 24.5664 47.9385C11.5057 47.9383 0.917969 37.3498 0.917969 24.2891C0.918179 11.2285 11.5058 0.640835 24.5664 0.640625ZM24.5664 4.69434C15.3017 4.69452 7.53908 11.1248 5.49707 19.7656L4.09082 20.1172C3.8143 20.1865 3.62016 20.4356 3.62012 20.7207V29.209C3.62012 29.4941 3.8143 29.7432 4.09082 29.8125L5.55078 30.1768C5.66102 30.2043 5.76999 30.1994 5.87012 30.1709C8.36805 38.1188 15.794 43.8836 24.5664 43.8838C33.3388 43.8837 40.7637 38.1187 43.2617 30.1709C43.3621 30.1996 43.4715 30.2043 43.582 30.1768L45.042 29.8125C45.3185 29.7432 45.5127 29.4941 45.5127 29.209V20.7207C45.5127 20.4356 45.3185 20.1865 45.042 20.1172L43.6348 19.7656C41.5926 11.1249 33.8311 4.69445 24.5664 4.69434ZM24.5664 5.9375C34.0269 5.93763 41.8147 13.0969 42.8096 22.293V26.2842C41.8153 35.4809 34.0274 42.6405 24.5664 42.6406C15.1025 42.6404 7.31259 35.4762 6.32227 26.2754V22.3018C7.31312 13.1015 15.1029 5.9377 24.5664 5.9375ZM30.9512 16.8691C30.6979 16.8347 30.4397 16.8693 30.2041 16.9688L13.8926 23.8604C12.7558 24.3409 12.6977 25.9914 13.8936 26.4893C14.7787 26.8578 15.8638 27.1602 17.0332 27.3555C17.6741 27.4626 18.2101 27.3554 19.2383 26.7275C20.4039 26.0153 23.9293 23.4859 26.125 21.8223C27.0092 21.1522 27.3503 21.5723 26.6016 22.3008C24.6938 24.1549 21.3553 27.2737 21.1455 28.1035C20.902 29.0741 22.8886 30.4384 23.5371 30.8643C24.8343 31.7152 26.277 32.5302 27.248 33.0596C28.4088 33.6921 29.797 32.9635 30.0068 31.6934L32.1709 18.5254C32.2124 18.2723 32.1851 18.0126 32.0928 17.7734C32.0003 17.5342 31.8453 17.324 31.6445 17.165C31.4438 17.0062 31.2045 16.9036 30.9512 16.8691Z"
+                            fill="white"
+                          ></path>
+                        </svg>
+                      </a>
+                      <a href="#" target="_blank" class="social__item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="49"
+                          height="48"
+                          viewbox="0 0 49 48"
+                          fill="none"
+                        >
+                          <path
+                            d="M24.5664 0.640625C37.6272 0.640625 48.2156 11.2284 48.2158 24.2891C48.2158 37.3499 37.6273 47.9385 24.5664 47.9385C11.5057 47.9383 0.917969 37.3498 0.917969 24.2891C0.918179 11.2285 11.5058 0.640835 24.5664 0.640625ZM24.5664 4.69434C15.3017 4.69452 7.53908 11.1248 5.49707 19.7656L4.09082 20.1172C3.8143 20.1865 3.62016 20.4356 3.62012 20.7207V29.209C3.62012 29.4941 3.8143 29.7432 4.09082 29.8125L5.55078 30.1768C5.66102 30.2043 5.76999 30.1994 5.87012 30.1709C8.36805 38.1188 15.794 43.8836 24.5664 43.8838C33.3388 43.8837 40.7637 38.1187 43.2617 30.1709C43.3621 30.1996 43.4715 30.2043 43.582 30.1768L45.042 29.8125C45.3185 29.7432 45.5127 29.4941 45.5127 29.209V20.7207C45.5127 20.4356 45.3185 20.1865 45.042 20.1172L43.6348 19.7656C41.5926 11.1249 33.8311 4.69445 24.5664 4.69434ZM24.5664 5.9375C34.0269 5.93763 41.8147 13.0969 42.8096 22.293V26.2842C41.8153 35.4809 34.0274 42.6405 24.5664 42.6406C15.1025 42.6404 7.31259 35.4762 6.32227 26.2754V22.3018C7.31312 13.1015 15.1029 5.9377 24.5664 5.9375ZM28.877 17.001L25.0645 21.3379L21.7725 17.002H17L22.7002 24.4229L17.2959 30.5752H19.6113L23.7803 25.8301L27.4277 30.5752H32.082L26.1377 22.75L31.1904 17.001H28.877ZM21.0723 18.3076L29.3457 29.1973H28.0635L19.6973 18.3076H21.0723Z"
+                            fill="white"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="join__left-position">
+                    <img src="./assets/img/join/position.svg" alt="position" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="join__right">
+              <div class="join__right-image">
+                <img
+                  data-fls-mouse=""
+                  data-fls-mouse-cx="250"
+                  data-fls-mouse-cy="500"
+                  alt="DOGE-1"
+                  src="./assets/img/join/dog.webp"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer data-fls-footer="" class="footer">
+        <div class="footer__container">
+          <span class="footer__copy">2025 © ALL RIGHTS RESERVED</span>
+          <div class="footer__icon">
+            <img src="./assets/img/footer-icon.svg" alt="footer-icon" />
+          </div>
+          <a
+            href="https://t.me/osnovoco"
+            target="_blank"
+            class="footer__osnovo"
+          >
+            <span>Designed by</span>
+            <img src="./assets/img/osnovo.svg" alt="Osnovo" />
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
